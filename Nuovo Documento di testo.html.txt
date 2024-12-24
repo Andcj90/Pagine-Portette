@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Accesso Protetto</title>
+    <script>
+        function checkPassword() {
+            const password = document.getElementById("password").value;
+            if (password === "1234") {
+                window.location.href = "https://accurate-grapple-f0b.notion.site/Nuovo-Cliente-Nome-Cliente-166f7aa4c53d8045a8aaf93087ee3d14?pvs=4";
+            } else {
+                alert("Password errata!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Inserisci la password per accedere:</h2>
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="checkPassword()">Accedi</button>
+</body>
+</html>
